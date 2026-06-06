@@ -1,0 +1,239 @@
+<!-- CREATE NEW FILE : product.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MuzicX Product</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#f4f4f4;
+      font-family:'Poppins',sans-serif;
+      overflow-x:hidden;
+    }
+
+    nav{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:25px 8%;
+      background:white;
+      position:sticky;
+      top:0;
+      z-index:100;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:600;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:60px 8%;
+      gap:60px;
+      flex-wrap:wrap;
+      background:linear-gradient(to bottom,#ffb184,#ffe2c9);
+    }
+
+    .hero-text{
+      max-width:550px;
+    }
+
+    .hero-text h1{
+      font-size:90px;
+      margin-bottom:20px;
+    }
+
+    .hero-text p{
+      font-size:22px;
+      line-height:1.8;
+      color:#333;
+      margin-bottom:40px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 30px;
+      border:none;
+      border-radius:14px;
+      cursor:pointer;
+      font-size:16px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .playstore{
+      background:black;
+      color:white;
+    }
+
+    .webapp{
+      background:#7b5cff;
+      color:white;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px);
+    }
+
+    .phone{
+      width:320px;
+      border-radius:30px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .section{
+      padding:100px 8%;
+      text-align:center;
+    }
+
+    .section h2{
+      font-size:70px;
+      margin-bottom:30px;
+    }
+
+    .coming{
+      font-size:80px;
+      color:#7b008f;
+      font-weight:bold;
+      text-shadow:
+      5px 5px 0px #ff7ce5,
+      10px 10px 0px #ffb6f4;
+    }
+
+    footer{
+      background:#ffb184;
+      padding:40px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:20px;
+      margin-top:100px;
+    }
+
+    @media(max-width:900px){
+
+      .hero-text h1{
+        font-size:60px;
+      }
+
+      .hero-text p{
+        font-size:18px;
+      }
+
+      .section h2{
+        font-size:50px;
+      }
+
+      .coming{
+        font-size:50px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="logo">
+      MuzicX
+    </div>
+
+    <div>
+      Upcoming Music Streaming Platform
+    </div>
+
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h1>MuzicX</h1>
+
+      <p>
+        MuzicX is a fast, lightweight music app designed to make listening simple and enjoyable.
+        It offers high-quality audio, smart playlists, and an easy interface that works smoothly
+        on any device.
+      </p>
+
+      <div class="buttons">
+
+        <button class="btn playstore">
+          Coming Soon On PlayStore
+        </button>
+
+        <button class="btn webapp">
+          Upcoming Music WebApp
+        </button>
+
+      </div>
+
+    </div>
+
+    <img src="MuzicX.png" class="phone">
+
+  </section>
+
+  <section class="section">
+
+    <h2>Upcoming Features</h2>
+
+    <p style="font-size:22px; line-height:1.8; max-width:900px; margin:auto;">
+      Fast streaming, smart recommendations, playlists, lightweight performance,
+      modern interface, and smooth music experience across devices.
+    </p>
+
+  </section>
+
+  <section class="section">
+
+    <div class="coming">
+      COMING SOON
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div>
+      MuzicX
+    </div>
+
+    <div>
+      VIBE LIKE MUSIC
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

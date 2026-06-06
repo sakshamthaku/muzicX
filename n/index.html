@@ -1,0 +1,446 @@
+ 
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MuzicX</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f7f7f7;
+      overflow-x:hidden;
+      color:#111;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 6%;
+      background:white;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:700;
+    }
+
+    .nav-right{
+      font-size:15px;
+      font-weight:600;
+      text-align:right;
+    }
+
+    /* HERO */
+
+    .hero{
+      width:100%;
+      min-height:100vh;
+      background:linear-gradient(to bottom,#f79b6d,#ffe4d0);
+      border-radius:0 0 40px 40px;
+      padding:80px 6%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:60px;
+      flex-wrap:wrap;
+    }
+
+    .hero-left{
+      flex:1;
+      min-width:300px;
+    }
+
+    .hero-left h1{
+      font-size:100px;
+      margin-bottom:25px;
+      line-height:1;
+    }
+
+    .hero-left p{
+      font-size:20px;
+      line-height:1.8;
+      max-width:650px;
+      margin-bottom:40px;
+    }
+
+    .buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .btn{
+      padding:16px 30px;
+      border:none;
+      border-radius:14px;
+      font-size:16px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px);
+    }
+
+    .playstore{
+      background:black;
+      color:white;
+    }
+
+    .webapp{
+      background:#7b5cff;
+      color:white;
+    }
+
+    .hero-right{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-width:280px;
+    }
+
+    .phone{
+      width:320px;
+      border-radius:30px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.2);
+    }
+
+    /* FEATURES */
+
+    .features{
+      padding:100px 6%;
+      background:linear-gradient(to bottom,#f7f7f7,#dce8ff);
+    }
+
+    .features h2{
+      font-size:70px;
+      margin-bottom:50px;
+    }
+
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      padding:40px;
+      border-radius:25px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      font-size:35px;
+      margin-bottom:20px;
+    }
+
+    .card p{
+      font-size:18px;
+      line-height:1.7;
+      color:#555;
+    }
+
+    /* COMING SOON */
+
+    .coming{
+      width:100%;
+      text-align:center;
+      padding:120px 6%;
+      background:#dce8ff;
+    }
+
+    .coming h1{
+      font-size:90px;
+      color:#8a008a;
+      text-shadow:
+      4px 4px 0px #ffb0ff,
+      8px 8px 0px #ff77ff;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#f5b18b;
+      padding:40px 6%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    footer h2{
+      font-size:35px;
+    }
+
+    footer p{
+      font-size:18px;
+      font-weight:600;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:992px){
+
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-left h1{
+        font-size:70px;
+      }
+
+      .hero-left p{
+        margin:auto;
+        margin-bottom:40px;
+      }
+
+      .buttons{
+        justify-content:center;
+      }
+
+      .features h2{
+        font-size:50px;
+        text-align:center;
+      }
+
+      .coming h1{
+        font-size:60px;
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      nav{
+        padding:18px 5%;
+      }
+
+      .logo{
+        font-size:26px;
+      }
+
+      .nav-right{
+        font-size:12px;
+      }
+
+      .hero{
+        padding:60px 5%;
+      }
+
+      .hero-left h1{
+        font-size:52px;
+      }
+
+      .hero-left p{
+        font-size:17px;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .phone{
+        width:260px;
+      }
+
+      .features{
+        padding:70px 5%;
+      }
+
+      .features h2{
+        font-size:42px;
+      }
+
+      .card{
+        padding:30px;
+      }
+
+      .card h3{
+        font-size:28px;
+      }
+
+      .card p{
+        font-size:16px;
+      }
+
+      .coming{
+        padding:90px 5%;
+      }
+
+      .coming h1{
+        font-size:42px;
+      }
+
+      footer{
+        padding:30px 5%;
+        text-align:center;
+        justify-content:center;
+      }
+
+      footer h2{
+        font-size:28px;
+      }
+
+      footer p{
+        font-size:15px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo">
+      MuzicX
+    </div>
+
+    <div class="nav-right">
+      WAY FOR <br> MUSIC
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-left">
+
+      <h1>MuzicX</h1>
+
+      <p>
+        MuzicX is a fast, lightweight music app designed to make listening simple and enjoyable.
+        It offers high-quality audio, smart playlists, and an easy interface that works smoothly
+        on any device. With upcoming music streaming webapp and app on PlayStore.
+      </p>
+
+      <div class="buttons">
+
+        <button class="btn playstore">
+          Coming Soon On PlayStore
+        </button>
+
+        <button class="btn webapp">
+          Upcoming Music WebApp
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="hero-right">
+
+      <img src="MuzicX.png" class="phone">
+
+    </div>
+
+  </section>
+
+  <!-- FEATURES -->
+
+  <section class="features">
+
+    <h2>FEATURES</h2>
+
+    <div class="feature-grid">
+
+      <div class="card">
+
+        <h3>01 🔥</h3>
+
+        <p>
+          Simple Premium Plans <br><br>
+          Easy weekly, monthly, and yearly options.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>02 ⚡</h3>
+
+        <p>
+          Fast & Lightweight
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>03 🎵</h3>
+
+        <p>
+          Smooth music streaming experience with smart playlists and modern interface.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- COMING -->
+
+  <section class="coming">
+
+    <h1>COMING SOON</h1>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h2>MuzicX</h2>
+
+    <p>VIBE LIKE MUSIC</p>
+
+  </footer>
+
+</body>
+
+</html>
