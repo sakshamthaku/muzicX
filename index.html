@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b15">
+  <title>NICO JARVIS AI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand">
+        <div class="brand-icon">N</div>
+        <div>
+          <h1>NICO <span>JARVIS</span></h1>
+          <p>Your local AI assistant</p>
+        </div>
+      </div>
+      <div class="status">
+        <span class="status-dot"></span> LOCAL AI
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="avatar" id="avatar">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="face">
+          <div class="eyes">
+            <span></span><span></span>
+          </div>
+          <div class="mouth"></div>
+        </div>
+      </div>
+
+      <h2>NICO is ready.</h2>
+      <p id="statusText">Start a conversation with your AI.</p>
+    </section>
+
+    <section id="chat" class="chat" aria-live="polite">
+      <div class="message ai">
+        <strong>JARVIS</strong>
+        Hello! I'm NICO JARVIS. What can I help you with today?
+      </div>
+    </section>
+
+    <form id="chatForm" class="composer">
+      <input
+        id="messageInput"
+        type="text"
+        placeholder="Ask me anything..."
+        maxlength="4000"
+        autocomplete="off"
+        required
+      >
+      <button id="sendButton" type="submit">Send</button>
+    </form>
+
+    <div class="controls">
+      <button id="micButton" type="button">🎙 Speak</button>
+      <button id="voiceButton" type="button">🔊 Voice: On</button>
+      <button id="stopButton" type="button">■ Stop voice</button>
+    </div>
+
+    <footer>
+      Running on your computer · Prototype v1
+    </footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
